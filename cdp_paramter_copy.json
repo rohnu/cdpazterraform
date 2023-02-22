@@ -1,0 +1,60 @@
+{
+    "environmentName": "dest-cod",
+    "credentialName": "rohnucloudbreak-app",
+    "region": "East US",
+    "datalakeName": "destrocdppocdl",
+    "scale": "LIGHT_DUTY",
+    "runtime": "7.2.2",
+    "publicKey": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyAYJboUVsy6lfjo02yHf8TQ9iQ+i61m/vZ14/fjoK6lxCIgmOTVQGbj3KXK7bWY8OMCZbUqA/VO9dRacp+aoiiVqGXGFJ0zqNKGqbAtGjqoX+ogZnC9QntAFk39ZRkGRv/JcEEwI515XzD1krobiDMV6LQc9tjGsVP+ABikiBTmjyQDaAqDuBrpZjANvDpbyeDxzdZp9ft8P0Y2zLBrmbmGeLRzVQhvcaOWkq6u3i48u2SHkPC4rFBSOlg9bglNOyIBGxfL+MjQU5LF7tU5p7jfNBuVZq2Sh6PtA6ztkK8S++eQPHBbDnMW0L88xirtZiJ5dUkxYSAWF0cXcE28mv rganeshbabu@HW14039.local",
+    "securityAccess": {
+       "cidr": "0.0.0.0/0"
+    },
+    "usePublicIp": true,
+    "logStorage": {
+        "storageLocationBase": "abfs://logs@psrohnu2sa.dfs.core.windows.net",
+        "managedIdentity": "/subscriptions/da35404a-2612-4419-baef-45fcdce6045e/resourceGroups/psrohnu2-resources/providers/Microsoft.ManagedIdentity/userAssignedIdentities/Loggeridentity",
+        "logManagedID": "Loggeridentity"
+    },
+    "cloudProviderConfiguration": {
+        "managedIdentity": "/subscriptions/da35404a-2612-4419-baef-45fcdce6045e/resourceGroups/psrohnu2-resources/providers/Microsoft.ManagedIdentity/userAssignedIdentities/Assumeridentity",
+        "storageLocation": "abfs://data@psrohnu2sa.dfs.core.windows.net",
+        "assumeManagedID": "Assumeridentity",
+        "dataManagedID": "Datalakeidentity",
+        "rangerManagedID": "Rangeridentity"
+    },
+    "dataAccessRole": "/subscriptions/da35404a-2612-4419-baef-45fcdce6045e/resourceGroups/psrohnu2-resources/providers/Microsoft.ManagedIdentity/userAssignedIdentities/Datalakeidentity",
+    "rangerAuditRole": "/subscriptions/da35404a-2612-4419-baef-45fcdce6045e/resourceGroups/psrohnu2-resources/providers/Microsoft.ManagedIdentity/userAssignedIdentities/Rangeridentity",
+    "rangerCloudAccessAuthorizerRole": "/subscriptions/da35404a-2612-4419-baef-45fcdce6045e/resourceGroups/psrohnu2-resources/providers/Microsoft.ManagedIdentity/userAssignedIdentities/Rangeridentity",
+    "mappings": [
+        {
+            "accessorCrn": "crn:altus:iam:us-west-1:558bc1d2-8867-4357-8524-311d51259233:user:9b60635d-e5cb-4abe-843f-fe6918483e81",
+            "role": "/subscriptions/da35404a-2612-4419-baef-45fcdce6045e/resourceGroups/psrohnu2-resources/providers/Microsoft.ManagedIdentity/userAssignedIdentities/Datalakeidentity"
+        }
+    ],
+    "setEmptyMappings": false,
+    "existingNetworkParams": {
+        "networkId": "psrohnu2cdp-vnet",
+        "resourceGroupName": "psrohnu2-resources",
+        "subnetIds": [
+            "psrohnu2cdp-subnet"
+        ]
+    },
+    "description": "",
+    "enableTunnel": true,
+    "workloadAnalytics": true,
+    "freeIpa": {
+        "instanceCountByGroup": 1
+    },
+    "tags": [
+        {
+            "key": "cdpcli",
+            "value": "yes"
+        },
+        {
+            "key": "creator",
+            "value": "rohnu"
+        }
+    ],
+    "proxyConfigName": "",
+    "resourceGroupName": "psrohnu2-resources"
+}
